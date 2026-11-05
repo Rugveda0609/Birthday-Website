@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Little Birthday Surprise</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="floating-hearts" aria-hidden="true">
+    <span>♡</span><span>✦</span><span>♡</span><span>✧</span><span>♡</span>
+  </div>
+
+  <header class="top-bar">
+    <a class="brand" href="#home">a little something ♡</a>
+    <button class="music-button" id="musicButton" type="button">♫ Play music</button>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <p class="eyebrow">A tiny corner of the internet, made just for you</p>
+      <h1>Happy Birthday,<br><span id="heroName">Sunshine</span> <span class="sparkle">✦</span></h1>
+      <p class="hero-copy">Today is all about celebrating the wonderful person you are.</p>
+      <button class="primary-button" id="startButton" type="button">Open your surprise <span>♡</span></button>
+      <div class="scroll-note">SCROLL A LITTLE <span>↓</span></div>
+      <div class="hero-decoration decor-one">✿</div>
+      <div class="hero-decoration decor-two">✧</div>
+    </section>
+
+    <section class="section letter-section" id="letter">
+      <div class="section-heading">
+        <p class="eyebrow">A few words from the heart</p>
+        <h2>A little letter for you</h2>
+      </div>
+      <article class="letter-card">
+        <div class="letter-stamp">♡</div>
+        <p class="letter-greeting" id="letterGreeting">Dear Sunshine,</p>
+        <p id="letterMessage">I hope your day is filled with little moments that make you smile, people who make you feel loved, and memories you will want to keep forever. Thank you for being exactly who you are. You deserve all the happiness this world has to offer.</p>
+        <p class="letter-signoff">With lots of love,</p>
+        <p class="signature" id="letterFrom">Someone who cares ♡</p>
+      </article>
+    </section>
+
+    <section class="section cake-section" id="cake">
+      <div class="section-heading">
+        <p class="eyebrow">Make a birthday wish</p>
+        <h2>A cake, just for you</h2>
+        <p class="section-subtitle">Tap the button to light up the candles. Then make a wish!</p>
+      </div>
+      <div class="cake-area">
+        <div class="cake">
+          <div class="candles">
+            <div class="candle"><span class="flame"></span></div>
+            <div class="candle"><span class="flame"></span></div>
+            <div class="candle"><span class="flame"></span></div>
+          </div>
+          <div class="icing"></div>
+          <div class="cake-top"></div>
+          <div class="cake-middle"></div>
+          <div class="cake-bottom"></div>
+          <div class="cake-plate"></div>
+        </div>
+      </div>
+      <button class="primary-button" id="candleButton" type="button">Light the candles ✨</button>
+      <p class="wish-message" id="wishMessage" aria-live="polite"></p>
+    </section>
+
+    <section class="section memories-section" id="memories">
+      <div class="section-heading">
+        <p class="eyebrow">Little moments, big memories</p>
+        <h2>A mini memory wall</h2>
+        <p class="section-subtitle">Replace these sample photos with your favourite pictures.</p>
+      </div>
+      <div class="gallery">
+        <figure class="photo-card">
+          <div class="photo-frame"><img src="photos/photo1.jpg" alt="Memory one"><span class="photo-fallback">Add photo 1</span></div>
+          <figcaption>One of my favourite moments ♡</figcaption>
+        </figure>
+        <figure class="photo-card photo-tilt">
+          <div class="photo-frame"><img src="photos/photo2.jpg" alt="Memory two"><span class="photo-fallback">Add photo 2</span></div>
+          <figcaption>A moment worth keeping ✿</figcaption>
+        </figure>
+        <figure class="photo-card">
+          <div class="photo-frame"><img src="photos/photo3.jpg" alt="Memory three"><span class="photo-fallback">Add photo 3</span></div>
+          <figcaption>More smiles, please!</figcaption>
+        </figure>
+        <figure class="photo-card photo-tilt">
+          <div class="photo-frame"><img src="photos/photo4.jpg" alt="Memory four"><span class="photo-fallback">Add photo 4</span></div>
+          <figcaption>And many more memories ♡</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section surprises-section" id="surprises">
+      <div class="section-heading">
+        <p class="eyebrow">A little something extra</p>
+        <h2>Open a tiny surprise</h2>
+        <p class="section-subtitle">Choose a gift. You never know what lovely message is inside.</p>
+      </div>
+      <div class="gift-grid">
+        <button class="gift" type="button" data-message="You make ordinary days feel a little more special. Never forget that. ♡">
+          <span class="gift-emoji">🎁</span><span>Gift one</span>
+        </button>
+        <button class="gift" type="button" data-message="I hope this new year brings you beautiful opportunities, peaceful days and plenty of reasons to smile. ✨">
+          <span class="gift-emoji">💝</span><span>Gift two</span>
+        </button>
+        <button class="gift" type="button" data-message="A reminder: you are appreciated more than you know. Keep being wonderfully you! 🌷">
+          <span class="gift-emoji">🎀</span><span>Gift three</span>
+        </button>
+      </div>
+      <p class="surprise-message" id="surpriseMessage" aria-live="polite">Your surprise will appear here ♡</p>
+    </section>
+
+    <section class="final-section section">
+      <div class="final-card">
+        <p class="eyebrow">One last thing...</p>
+        <h2>May your year be as lovely as your heart.</h2>
+        <p>Keep laughing, keep dreaming, and keep being you.</p>
+        <div class="final-heart">♡</div>
+        <p class="final-signature" id="finalFrom">Made with love</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>Made with a little extra love <span>♡</span></footer>
+  <audio id="birthdayMusic" src="birthday-song.mp3" loop></audio>
+  <script src="script.js"></script>
+</body>
+</html>
